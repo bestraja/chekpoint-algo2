@@ -1,0 +1,54 @@
+    
+probleme1:
+
+  ALGORITHM solution1
+   VAR
+   tab1,tab2 : ARRAY_OF INTEGER[5];
+   i,j, som, elem : INTEGER;
+BEGIN
+   FOR i FROM 0 TO 4 DO
+       Read(tab1[i]);
+   END_FOR
+FOR j FROM 0 TO 4 DO
+       Read(tab2[j]);
+   END_FOR
+som:=0;
+for i from 0 to 4 do
+elm:=0;
+ for j from 0 to 4 do
+  if tab1[i]<>tab2[j]
+   {
+    elem:=tab1[i];
+    }
+  som:=som+elm;
+write('somme =',som);
+  END
+
+probleme2:
+
+ALGORITHM solution21
+
+ tab1,tab2 ,tab3: ARRAY_OF INTEGER[5];
+   i,j, som, elem : INTEGER;
+BEGIN
+   FOR i FROM 0 TO 4 DO
+       Read(tab1[i]);
+   END_FOR
+FOR j FROM 0 TO 4 DO
+       Read(tab2[j]);
+   END_FOR
+som:=0;
+for i from 0 to 4 do
+elm:=0;
+ for j from 0 to 4 do
+  if tab1[i]<>tab2[j]
+   {
+    elem:=tab1[i];
+    }
+else tab3[i]:=tab1[i];
+  som:=som+elm;
+write('Sum of overlapping elements:',som);
+for(ifrom 0 to 4 do)
+write('Common elements are :',tab3[i]);
+
+  END
